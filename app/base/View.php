@@ -22,7 +22,8 @@ class View {
 
     public function renderView($view) {
         ob_start();
-        require($this->app->viewsDir . '\\' . $this->app->controller->id . '\\' . $view . '.php');
+//        require($this->app->viewsDir . '\\' . $this->app->controller->id . '\\' . $view . '.php');
+        require($this->app->viewsDir . '/' . $this->app->controller->id . '/' . $view . '.php');
         $content = ob_get_contents();
         ob_end_clean();
         return $content;
