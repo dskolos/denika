@@ -31,7 +31,8 @@ class View {
 
     public function renderLayout($layout, $content) {
         ob_start();
-        require($this->app->layoutsDir . '\\' . $layout . '.php');
+//        require($this->app->layoutsDir . '\\' . $layout . '.php');
+        require($this->app->layoutsDir . '/' . $layout . '.php');
         $content = ob_get_contents();
         ob_end_clean();
         return $content;

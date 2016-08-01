@@ -29,10 +29,12 @@ class App {
 
         $this->appDir = dirname(__DIR__);
         $this->baseDir = __DIR__;
-        $this->controllersDir = $this->appDir . '\\controllers';
+//        $this->controllersDir = $this->appDir . '\\controllers';
+        $this->controllersDir = $this->appDir . '/controllers';
 //        $this->viewsDir = $this->appDir . '\\views';
         $this->viewsDir = $this->appDir . '/views';
-        $this->layoutsDir = $this->appDir . '\\views\\layouts';
+//        $this->layoutsDir = $this->appDir . '\\views\\layouts';
+        $this->layoutsDir = $this->appDir . '/views/layouts';
 
         $this->__dataBase = new DataBase($db);
 
