@@ -14,7 +14,7 @@ class Menu extends Widget {
                     || $this->app->userId > 0
                 ) ? ' class="active"' : '';
                 ?>
-                <li<?=$class;?>><a href="/">All users</a></li>
+                <li<?=$class;?>><a href="/">All users & articles</a></li>
 
                 <?php $class = (
                     '/user' == $_SERVER['REDIRECT_URL']
